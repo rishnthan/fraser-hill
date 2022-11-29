@@ -9,9 +9,15 @@
 .rishnav {
     color: var(--dark);
     background: var(--main);
-    padding-right: 5%;
-    padding-left: 5%; 
+    padding-right: 15%;
+    padding-left: 15%; 
     font-family: 'Montserrat', sans-serif;
+}
+
+.rishbtn {
+    margin-left: 40%;
+    color: var(--bright);
+    background-color: var(--green);
 }
 
 h3 {
@@ -19,9 +25,9 @@ h3 {
 }
 
 .section {
-    margin-bottom: 3%;
-    padding-right: 5%;
-    padding-left: 5%;
+    margin-top: 3%;
+    padding-right: 15%;
+    padding-left: 15%;
 }
 
 a {
