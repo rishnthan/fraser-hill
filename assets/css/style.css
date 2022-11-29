@@ -14,8 +14,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.navigationNav {
+    margin-right: 25%;
+}
+
 .rishbtn {
-    margin-left: 40%;
+    margin-top: 2px;
     color: var(--bright);
     background-color: var(--green);
 }
@@ -24,8 +28,9 @@ h3 {
     font-family: 'Roboto', sans-serif;
 }
 
-.section {
+.section   {
     margin-top: 3%;
+    margin-bottom: 5%;
     padding-right: 15%;
     padding-left: 15%;
 }
