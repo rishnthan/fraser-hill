@@ -1,0 +1,28 @@
+:root {
+    --main: #ccfccb;
+    --dark: #464e47;
+    --bright: #f1fffa;
+    --green: #568259;
+    --neutral: #96e6b3;
+}
+
+.rishnav {
+    color: var(--dark);
+    background: var(--main);
+    padding-right: 5%;
+    padding-left: 5%; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+a {
+    color: inherit;
+}
+
+.nav-item {
+    font-size: 15px;
+}
+
+.navbar-brand:hover {
+    color: inherit;
+}
