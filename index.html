@@ -53,17 +53,19 @@
         <div class="home">
            
         </div>
-        <div class="section attractions" id="attractions">
+        <div class="section attractions " id="attractions">
             <h3>Attractions</h3>
             <div class="owl-carousel attractioncards">
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-              </div>
+                <div class="card">
+                    <img class="card-img-top" src="holder.js/100x180/" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Allan's Water</h4>
+                        <p class="card-text">Allan's Water is a tiny lake in an alcove that was converted into a park for recreational sports and paddle boating from a reservoir that had fallen into neglect over time.
+                            FH Allan, assistant to chief infrastructure engineer FW Mager, was the architect of this project, which was originally a water collecting and supply during the colonial hill station era.</p>
+                    </div>
+                </div>
+                <
+            </div>
         </div>
         <div class="section nature-trails" id="nature-trails">
             <h3>Nature Trails</h3>
@@ -78,7 +80,18 @@
     </body>
     <script>
         $(document).ready(function(){
-            $(".attractioncards").owlCarousel();
+            $(".attractioncards").owlCarousel({
+                center: true,
+                items:2,
+                loop:true,
+                margin:10,
+                responsive:{
+                    600:{
+                        items:4
+                    }
+                }
+            });
         });
+
     </script>
 </html>
