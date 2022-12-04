@@ -127,9 +127,14 @@ a {
     font-weight: bold;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1280px) {
     .trails-container {
         display: initial;
+    }
+
+    .img-fluid {
+        width: 100%;
+        height:auto;
     }
     .trails {
         width: 100%;
