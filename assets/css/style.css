@@ -131,11 +131,6 @@ a {
     .trails-container {
         display: initial;
     }
-
-    .img-fluid {
-        width: 100%;
-        height:auto;
-    }
     .trails {
         width: 100%;
         margin-bottom: 10%;
