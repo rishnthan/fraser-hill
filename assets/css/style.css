@@ -24,13 +24,15 @@
 
 .card-header {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 1.2rem;
     color: white;
     background: var(--green);
 }
 
 .card-body {
-    color: var(--dark);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: black;
 }
 
 .rishbtn {
@@ -49,8 +51,10 @@
 }
 
 h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
     margin-bottom: 3%;
+    color: black;
 }
 .owl-carousel .owl-stage {
     display: flex;
