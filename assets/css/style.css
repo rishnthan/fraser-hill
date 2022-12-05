@@ -24,7 +24,6 @@
 
 .card-header {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
     -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -111,7 +110,7 @@ a {
 }
 
 .attraction-text {
-    font-size:15px;
+    font-size:16px;
 }
 
 .trails-container {
@@ -165,6 +164,10 @@ a {
     width: 32%; 
     float: left;
     height: 70vh;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.25);
     overflow-y: scroll;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(70vh);
@@ -180,13 +183,17 @@ a {
     height: 70vh;
 }
 .homestays {
-    margin-left: 2%;
+    margin-left: 4%;
     width: 30%;
 }
 
 .hotels {
-    margin-right: 2%;
+    margin-right: 4%;
     width: 30%;
+}
+
+.end {
+    display: initial;
 }
 
 .attractioncard:hover {
