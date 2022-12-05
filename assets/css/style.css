@@ -145,6 +145,36 @@ a {
     box-sizing: border-box;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.25);
 }
+.scrollbox {
+    width: 30%;
+    float: left;
+    height: 70vh;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.25);
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(70vh);
+    scroll-snap-type: y mandatory;
+}
+
+.scrollbox::-webkit-scrollbar {
+    display: none;
+}
+
+.homestays {
+    margin-left: 5%;
+    width: 30%;
+}
+
+.hotels {
+    margin-right: 5%;
+    width: 30%;
+}
+
 
 @media screen and (max-width: 1280px) {
     .trails-container {
@@ -158,21 +188,20 @@ a {
         margin-left: 0;
         margin-right: 0;
     }
+    .scrollbox {
+        margin-bottom: 15%;
+        width: 100%;
+    }
+    .homestays {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .hotels {
+        width: 100%;
+    }
 }
 
-.scrollbox {
-    width: 32%; 
-    float: left;
-    height: 70vh;
-    -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-    box-sizing: border-box;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.25);
-    overflow-y: scroll;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(70vh);
-    scroll-snap-type: y mandatory;
-}
 .hotels-cards {
     scroll-snap-align: start;
     height: 70vh;
@@ -182,14 +211,10 @@ a {
     scroll-snap-align: start;
     height: 70vh;
 }
-.homestays {
-    margin-left: 4%;
-    width: 30%;
-}
 
-.hotels {
-    margin-right: 4%;
-    width: 30%;
+.homestays-cards {
+    scroll-snap-align: start;
+    height: 70vh;
 }
 
 .end {
