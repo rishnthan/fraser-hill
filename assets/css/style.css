@@ -56,7 +56,7 @@ h3 {
     margin-bottom: 3%;
     color: black;
 }
-.owl-carousel .owl-stage {
+.attractioncards .owl-stage {
     display: flex;
 }
 
@@ -121,11 +121,12 @@ a {
 
 .trail-text {
     font-size: 14px;
+    padding-top: 2%;
 }
 
 .trail-title {
     font-weight: bold;
-    color: var(--green);
+    color: var(--bright);
 }
 
 @media screen and (max-width: 1280px) {
@@ -140,4 +141,27 @@ a {
         margin-left: 0;
         margin-right: 0;
     }
+}
+
+.scrollbox {
+    width: 32%; 
+    float: left;
+    height: 70vh;
+    overflow-y: scroll;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(70vh);
+    scroll-snap-type: y mandatory;
+}
+.hotels-cards {
+    scroll-snap-align: start;
+    height: 70vh;
+}
+.homestays {
+    margin-left: 2%;
+    width: 30%;
+}
+
+.hotels {
+    margin-right: 2%;
+    width: 30%;
 }
