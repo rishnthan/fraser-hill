@@ -281,4 +281,18 @@ a {
 .accommodationBTN {
     position: absolute;
     bottom: 5%;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    background: var(--bright);
+    color: var(--dark);
+}
+
+.accommodationBTN:hover {
+    background: var(--main);
+    color: var(--dark);
+}
+
+.accommodationBTN:active {
+    background: var(--green);
+    color: white;
 }
