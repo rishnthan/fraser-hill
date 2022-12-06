@@ -19,7 +19,7 @@ html {
 }
 
 .navigationNav {
-    margin-right: 25%;
+    margin-right: 30%;
 }
 
 .card-img-top {
@@ -86,7 +86,7 @@ a {
 }
 
 .nav-item {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .navbar-brand:hover {
@@ -100,6 +100,11 @@ a {
 .nav-link:hover {
     color: var(--green);
 }
+
+.nav-link:active {
+    color: darkgreen;
+}
+
 
 .video-container video {
     width: 100%;
