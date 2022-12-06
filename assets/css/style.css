@@ -75,6 +75,12 @@ h3 {
     padding-left: 15%;
 }
 
+.accommodations, .nature-trails {
+    padding-top: 3vh;
+    height:100vh;
+    width: 100%;
+}
+
 .learnBTN {
     color: white;
     background: var(--green);
@@ -212,6 +218,10 @@ a {
     .hotels {
         width: 100%;
     }
+    .accommodations, .nature-trails {
+        height:initial;
+        width: 100%;
+    }
 
     .accommodation-container {
         display: initial;
@@ -327,8 +337,10 @@ a {
     transform: scale(1.1);
 }
 
-.end {
-    background: #E8BF53;
+.visit {
+    background: #f0f5f0;
     width:100%;
-    height:80vh;
+    height:95vh;
+    padding-right: 15%;
+    padding-left: 15%;
 }
