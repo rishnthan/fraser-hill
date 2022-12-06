@@ -157,7 +157,7 @@ a {
 }
 
 .scrollbox {
-    height: 75vh;
+    height: 80vh;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -166,7 +166,7 @@ a {
     -ms-overflow-style: none;
     scrollbar-width: none;
     scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(75vh);
+    scroll-snap-points-y: repeat(80vh);
     scroll-snap-type: y mandatory;
 }
 
@@ -183,7 +183,7 @@ a {
 }
 
 
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 1280px) {
     .trails-container {
         display: initial;
     }
@@ -215,17 +215,17 @@ a {
 
 .hotels-cards {
     scroll-snap-align: start;
-    height: 75vh;
+    height: 80vh;
 }
 
 .bungalows-cards {
     scroll-snap-align: start;
-    height: 75vh;
+    height: 80vh;
 }
 
 .homestays-cards {
     scroll-snap-align: start;
-    height: 75vh;
+    height: 80vh;
 }
 
 
