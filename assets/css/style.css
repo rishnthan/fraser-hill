@@ -326,3 +326,9 @@ a {
 .footer-text:hover {
     transform: scale(1.1);
 }
+
+.end {
+    background: #E8BF53;
+    width:100%;
+    height:80vh;
+}
