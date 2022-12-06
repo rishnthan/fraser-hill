@@ -277,3 +277,8 @@ a {
 .accommodation-cards .card-text{
     margin-top: 3%;
 }
+
+.accommodationBTN {
+    position: absolute;
+    bottom: 5%;
+}
