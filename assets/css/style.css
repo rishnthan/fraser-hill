@@ -279,8 +279,6 @@ a {
 }
 
 .accommodationBTN {
-    position: absolute;
-    bottom: 5%;
     font-family: 'Staatliches', cursive;
     font-size: 20px;
     background: var(--bright);
