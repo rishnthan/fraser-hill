@@ -6,6 +6,10 @@
     --neutral: #96e6b3;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .rishnav {
     color: var(--dark);
     padding-right: 15%;
@@ -143,7 +147,7 @@ a {
     -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
     box-sizing: border-box;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 14px rgba(0,0,0,0.1), 0 8px 14px rgba(0, 0, 0, 0.15);
 }
 
 .accommodation-container {
@@ -155,7 +159,7 @@ a {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 12px rgba(0,0,0,0.1), 0 10px 12px rgba(0, 0, 0, 0.15);
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -231,13 +235,14 @@ a {
 }
 
 .accommodation-header {
-    display:flex;   
+    color: var(--dark);
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 5%;
 }
 
-.accommodation-title {
-    padding-right: 30%;
-}
-
-.accommodation-btitle {
-    padding-right: 26%;
+.accommodation-cards {
+    background-color: var(--green);
+    color: var(--bright);
 }
