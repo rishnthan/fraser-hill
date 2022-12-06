@@ -22,7 +22,7 @@ html {
 }
 
 .card-img-top {
-    height: 220px;
+    height: 25vh;
     width: auto;
 }
 
@@ -115,6 +115,7 @@ a {
 
 .attraction-text {
     font-size:16px;
+    padding-bottom: 5%;
 }
 
 .trails-container {
@@ -226,12 +227,30 @@ a {
     height: 70vh;
 }
 
+
 .end {
     display: initial;
 }
 
 .attractioncard:hover {
     box-shadow: 0 6px 10px rgba(0,0,0,0.16), 0 6px 10px rgba(0,0,0,0.23);
+}
+
+.subtext {
+    position: fixed;
+    bottom: 2px;
+    color:gray;
+    font-weight: 600;
+    font-size: 16px;
+    left: 7%;
+    -webkit-transition-duration:0.2s;
+    -webkit-transition-timing-function:linear;
+    -webkit-transition-delay:0s;
+}
+
+.attractioncard:hover .subtext {
+    color: green;
+    left: 10%;
 }
 
 .accommodation-header {
