@@ -85,7 +85,7 @@ a {
 }
 
 .nav-item {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .navbar-brand:hover {
@@ -272,4 +272,8 @@ a {
 .accommodation-cards {
     background-color: var(--green);
     color: var(--bright);
+}
+
+.accommodation-cards .card-text{
+    margin-top: 3%;
 }
