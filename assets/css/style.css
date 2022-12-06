@@ -8,6 +8,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .rishnav {
@@ -156,7 +157,7 @@ a {
 }
 
 .scrollbox {
-    height: 70vh;
+    height: 75vh;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -165,7 +166,7 @@ a {
     -ms-overflow-style: none;
     scrollbar-width: none;
     scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(70vh);
+    scroll-snap-points-y: repeat(75vh);
     scroll-snap-type: y mandatory;
 }
 
@@ -182,7 +183,7 @@ a {
 }
 
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1275px) {
     .trails-container {
         display: initial;
     }
@@ -214,17 +215,17 @@ a {
 
 .hotels-cards {
     scroll-snap-align: start;
-    height: 70vh;
+    height: 75vh;
 }
 
 .bungalows-cards {
     scroll-snap-align: start;
-    height: 70vh;
+    height: 75vh;
 }
 
 .homestays-cards {
     scroll-snap-align: start;
-    height: 70vh;
+    height: 75vh;
 }
 
 
@@ -279,6 +280,8 @@ a {
 }
 
 .accommodationBTN {
+    position: absolute;
+    bottom: 3vh;
     font-family: 'Staatliches', cursive;
     font-size: 20px;
     background: var(--bright);
@@ -293,4 +296,28 @@ a {
 .accommodationBTN:active {
     background: var(--green);
     color: white;
+}
+
+.footer {
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 0.3);
+    background: var(--green);
+    height: 5vh;
+    width: 100%;
+    color: white;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-text {
+    transition: transform .2s;
+}
+.link {
+    color: var(--neutral);
+}
+
+.footer-text:hover {
+    transform: scale(1.1);
 }
