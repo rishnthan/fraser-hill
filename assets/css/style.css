@@ -145,9 +145,12 @@ a {
     box-sizing: border-box;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.25);
 }
+
+.accommodation-container {
+    display: flex;
+}
+
 .scrollbox {
-    width: 30%;
-    float: left;
     height: 70vh;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -167,12 +170,10 @@ a {
 
 .homestays {
     margin-left: 5%;
-    width: 30%;
 }
 
 .hotels {
     margin-right: 5%;
-    width: 30%;
 }
 
 
@@ -200,6 +201,10 @@ a {
     .hotels {
         width: 100%;
     }
+
+    .accommodation-container {
+        display: initial;
+    }
 }
 
 .hotels-cards {
@@ -223,4 +228,16 @@ a {
 
 .attractioncard:hover {
     box-shadow: 0 6px 10px rgba(0,0,0,0.16), 0 6px 10px rgba(0,0,0,0.23);
+}
+
+.accommodation-header {
+    display:flex;   
+}
+
+.accommodation-title {
+    padding-right: 30%;
+}
+
+.accommodation-btitle {
+    padding-right: 26%;
 }
