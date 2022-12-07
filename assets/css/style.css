@@ -1,3 +1,4 @@
+/* Variables to have easy access to main colors */
 :root {
     --main: #ccfccb;
     --dark: #464e47;
@@ -11,13 +12,16 @@ html {
     overflow-x: hidden;
 }
 
+/* Home */
 .home {
     height: 100vh;
 }
 
+/* Video */
 #video {
     filter: brightness(80%);
     position: absolute;
+    /* This allows the navbar to be in front of the video*/
     z-index: -1;
     right: 0;
     bottom: 0;
@@ -25,23 +29,66 @@ html {
     min-height: 100vh;
 }
 
+/* Navbar */
 .rishnav {
     color: white;
     text-shadow: 0 8px 12px rgba(0,0,0,0.30), 0 8px 12px rgba(0, 0, 0, 0.50);
     padding-right: 15%;
     padding-left: 15%;
     font-family: 'Montserrat', sans-serif;
-    animation: color-change 24s infinite;
 }
 
+/* Navigation Items Container */
 .navigationNav {
     margin-right: 33%;
 }
 
+/* Changes Nav Link color on Hover */
+.nav-link:hover {
+    color: var(--neutral);
+}
+
+/* Changes Nav Link color on Active */
+.nav-link:active {
+    color: var(--dark);
+}
+
+/* Nav Item */
+.nav-item {
+    font-size: 16px;
+}
+
+/* Removing the blue color hover over navbar-brand as text-decoration doesn't work properly */
+.navbar-brand:hover {
+    color: inherit;
+}
+
+/* Visit Today Button */
+.rishbtn {
+    margin-top: 1px;
+    color: var(--bright);
+    background-color: var(--green);
+    transition: transform .2s;
+}
+
+/* Changes color and background with animation of Visit Today Button on Hover */
+.rishbtn:hover {
+    background: var(--dark);
+    color: var(--bright);
+    transform: scale(1.1);
+}
+
+/* When clicked, change Visit Today Button text color */
+.rishbtn:active {
+    color: var(--neutral);
+}
+
+/* Home Content */
 .home-content {
     margin-top: 15%;
 }
 
+/* Home Content Header */
 .home-content h1 {
     font-family: 'Staatliches', cursive;
     font-size: 9rem;
@@ -52,6 +99,7 @@ html {
     text-shadow: 0 8px 12px rgba(0,0,0,0.30), 0 8px 12px rgba(0, 0, 0, 0.50);
 }
 
+/* Animate Home Content Header to "Bounce" */
 @media (prefers-reduced-motion: no-preference) {
     .home-content h1 {
         animation: bounce 5s linear infinite;
@@ -65,11 +113,12 @@ html {
     }
 }
 
-
+/* Burger Icon */
 .fa-bars {
     color: white;
 }
 
+/* Home Content Text */
 .home-content p {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -77,11 +126,35 @@ html {
     font-weight: 400;
     text-shadow: 0 8px 12px rgba(0,0,0,0.30), 0 8px 12px rgba(0, 0, 0, 0.50);
 }
+
+/* Home Content Button that is linked to Attractions */
+.homeButton {
+    background: var(--bright);
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    letter-spacing: .05rem;
+}
+
+/* Expands and changes color of Home Content Button on Hover */
+.homeButton:hover {
+    background: var(--dark);
+    color: white;
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+
+/* Changes text color when Home Content Button is pressed */
+.homeButton:active {
+    color: var(--main);
+}
+
+/* Card Image Top */
 .card-img-top {
     height: 25vh;
     width: auto;
 }
 
+/* Card Header */
 .card-header {
     font-family: 'Montserrat', sans-serif;
     -webkit-box-sizing: border-box;
@@ -92,148 +165,135 @@ html {
     background: var(--green);
 }
 
+/* Card Body */
 .card-body {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: black;
 }
 
-.rishbtn {
-    margin-top: 1px;
-    color: var(--bright);
-    background-color: var(--green);
-    transition: transform .2s;
-}
-
-.rishbtn:hover {
-    background: var(--dark);
-    color: var(--bright);
-    transform: scale(1.1);
-}
-.rishbtn:active {
-    background: var(--dark);
-    color: var(--neutral);
-}
-
+/* Section Header Text */
 h3 {
     font-family: 'Staatliches', cursive;
     font-size: 3rem;
     margin-bottom: 3%;
     color: black;
 }
+
+/* Owl Carousel, change display to make it responsive */
 .owl-carousel .owl-stage {
     display: flex;
 }
 
+/* Section Margin and Padding */
 .section   {
     margin-bottom: 3%;
     padding-right: 15%;
     padding-left: 15%;
 }
+
+/* Attraction Section Size and Padding */
 .attractions {
     padding-top: 4vh;
     height: 80vh;
     width: 100%;
 }
+
+/* Accommodation and Nature Trails Size and Padding */
 .accommodations, .nature-trails{
     padding-top: 3vh;
     height:100vh;
     width: 100%;
 }
 
-.learnBTN {
-    color: white;
-    background: var(--green);
-}
-
-.homeButton {
-    background: var(--bright);
-    font-family: 'Staatliches', cursive;
-    font-size: 20px;
-    letter-spacing: .05rem;
-}
-
-.homeButton:hover {
-    background: var(--dark);
-    color: white;
-    transition: transform .2s;
-    transform: scale(1.1);
-}
-
-.homeButton:active {
-    color: var(--main);
-}
-
+/* Removing Text Decoration and Color Text */
 a {
     color: inherit;
     text-decoration: none;
 }
 
-.nav-item {
-    font-size: 16px;
-}
-
-.navbar-brand:hover {
-    color: inherit;
-}   
-
+/* Set Card to 100% */
 .card {
     height: 100%;
 }
 
-.nav-link:hover {
-    color: var(--neutral);
-}
-
-.nav-link:active {
-    color: var(--dark);
-}
-
-
-.video-container video {
-    width: 100%;
-    height: 91%;
-    position: absolute;
-    object-fit: cover; 
-}
-
+/* Attraction Header */
 .attraction-header {
     font-family: 'Staatliches', cursive;
     font-size: 24px;
     color: var(--green)
 }
 
+/* Thicker shadow on Attraction Card on Hover */
+.attractioncard:hover {
+    box-shadow: 0 6px 10px rgba(0,0,0,0.16), 0 6px 10px rgba(0,0,0,0.23);
+}
+
+/* Attraction Text */
 .attraction-text {
     font-size:16px;
     padding-bottom: 5%;
 }
 
+/* Learn More text */
+.subtext {
+    position: fixed;
+    bottom: 2px;
+    color:gray;
+    font-weight: 600;
+    font-size: 16px;
+    left: 7%;
+    -webkit-transition-duration:0.2s;
+    -webkit-transition-timing-function:linear;
+    -webkit-transition-delay:0s;
+}
+
+/* Animation for Learn More Text on Hover */
+.attractioncard:hover .subtext {
+    color: green;
+    left: 10%;
+}
+
+/* Animation for Learn More Text on Active */
+.attractioncard:active .subtext{
+    color: var(--dark);
+    left: 10%;
+}
+/* Trails Container */
 .trails-container {
     display: flex;
 }
 
+/* Trails Card */
 .trails {
     width: 50%;
     margin-bottom: 3%;
 }
+
+/* Left Trails Card to adjust right margin */
 .left {
     margin-right: 1%;
 }
+
+/* Right Trails Card to adjust left margin */
 .right {
     margin-left: 1%;
 }
 
+/* Trail Text */
 .trail-text {
     font-size: 14px;
     padding-top: 2%;
 }
 
+/* Trail Title */
 .trail-title {
     font-family: 'Staatliches', cursive;
     font-size: 24px;
     color: var(--bright);
 }
 
+/* Card Body with Shadow */
 .card-body {
     -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -241,10 +301,12 @@ a {
     box-shadow: 0 8px 14px rgba(0,0,0,0.1), 0 8px 14px rgba(0, 0, 0, 0.15);
 }
 
+/* Accommodation Container */
 .accommodation-container {
     display: flex;
 }
 
+/* ScrollBox with Scroll Snapping, and Shadow */
 .scrollbox {
     height: 80vh;
     -webkit-box-sizing: border-box;
@@ -259,63 +321,47 @@ a {
     scroll-snap-type: y mandatory;
 }
 
+
+/* Hide Scroll Bar of Scrollbox */
 .scrollbox::-webkit-scrollbar {
     display: none;
 }
 
+/* Margin Left for Homestays */
 .homestays {
     margin-left: 5%;
 }
 
+/* Margin Right for Hotels */
 .hotels {
     margin-right: 5%;
 }
 
+/* Have to do separately as it doesn't work when combined */
+/* Hotels Cards, Set Snapping Point and Height */
 .hotels-cards {
     scroll-snap-align: start;
     height: 80vh;
 }
 
+/* Bungalows Cards, Set Snapping Point and Height */
 .bungalows-cards {
     scroll-snap-align: start;
     height: 80vh;
 }
 
+/* Homestays Cards, Set Snapping Point and Height */
 .homestays-cards {
     scroll-snap-align: start;
     height: 80vh;
 }
 
-
+/* Change end display to initial */
 .end {
     display: initial;
 }
 
-.attractioncard:hover {
-    box-shadow: 0 6px 10px rgba(0,0,0,0.16), 0 6px 10px rgba(0,0,0,0.23);
-}
-
-.subtext {
-    position: fixed;
-    bottom: 2px;
-    color:gray;
-    font-weight: 600;
-    font-size: 16px;
-    left: 7%;
-    -webkit-transition-duration:0.2s;
-    -webkit-transition-timing-function:linear;
-    -webkit-transition-delay:0s;
-}
-
-.attractioncard:hover .subtext {
-    color: green;
-    left: 10%;
-}
-
-.attractioncard:active .subtext{
-    color: var(--dark);
-    left: 10%;
-}
+/* Accommodation Header */
 .accommodation-header {
     color: var(--dark);
     font-family: 'Montserrat',sans-serif;
@@ -324,20 +370,25 @@ a {
     margin-bottom: 5%;
 }
 
+/* Class to change rating star color */
 .checked {
     color: gold
 }
 
+/* Accommodation Cards */
 .accommodation-cards {
     background-color: var(--green);
     color: var(--bright);
 }
 
+/* Margin Top for the Card Text in Accommodation Cards*/
 .accommodation-cards .card-text{
     margin-top: 3%;
 }
 
+/* Accommodation Button */
 .accommodationBTN {
+    /* Forces button to be at bottom of card */
     position: absolute;
     bottom: 3vh;
     font-family: 'Staatliches', cursive;
@@ -347,40 +398,19 @@ a {
     transition: transform .2s;
 }
 
+/* Expand Animation for Accommodation Button */
 .accommodationBTN:hover {
     background: var(--main);
     color: var(--dark);
     transform: scale(1.05);
 }
 
+/* Change Accommodation Button Text Color when Pressed */
 .accommodationBTN:active {
     color: black;
 }
 
-.footer {
-    box-shadow: 0 0 2vh rgba(0, 0, 0, 0.3);
-    background: var(--green);
-    height: 5vh;
-    width: 100%;
-    color: white;
-}
-
-.footer a {
-    text-decoration: none;
-    color: white;
-}
-
-.footer-text {
-    transition: transform .2s;
-}
-.link {
-    color: var(--neutral);
-}
-
-.footer-text:hover {
-    transform: scale(1.1);
-}
-
+/* Visit Section */
 .visit {
     padding-right: 15%;
     padding-left: 15%;
@@ -389,10 +419,12 @@ a {
     height:95vh;
 }
 
+/* Visit Container */
 .visit-container {
     display: flex;
 }
 
+/* Map Card */
 .map {
     margin-top:5% ;
     margin-right: 5%;
@@ -400,47 +432,59 @@ a {
     height: 80vh;
 }
 
+/* Setting Font for Card Title in all of the subsections of Visit Section */
 .map .card-title, .socials .card-title, .newsletter .card-title {
     font-family: 'Staatliches', cursive;
     font-size: 48px;
 }
 
+/* Rounding the embed Map */
 iframe {
     border-radius: 15px;
 }
+
+/* Visit subcontainer */
 .visit-subcontainer {
     height: 80vh;
     margin-top: 5%;
     width: 45%;
 }
 
+/* Socials */
 .socials {
     margin-top: 5%;
     height: 48%;
 }
 
-.newsletter {
-    height: 48%;
-}
+/* Social Icons since using FA5 */
 .social-icon {
     margin-top: 10%;
     font-size: 6vh;
     color: var(--dark);
 }
 
+/* Social Icon for animation */
 .social-icon i {
     transition: transform .2s;
 }
 
+/* Expand Animation on Hover for Social Icon */
 .social-icon i:hover {
     color: var(--green);
     transform: scale(1.3);
 }
 
+/* Newsletter Subsection */
+.newsletter {
+    height: 48%;
+}
+
+/* Newsletter Form */
 .form-control {
     margin-bottom: 3%;
 }
 
+/* Subscribe Button for Newsletter */
 .newsbtn {
     width: 100%;
     background: var(--dark);
@@ -448,53 +492,96 @@ iframe {
     transition: transform .2s;
 }
 
+/* Expand Animate and Change Colors of Subscribe Button on Hover */
 .newsbtn:hover {
     background: var(--green);
     color: white;
     transform: scale(1.02);
 }
 
+/* Change text color of Subscribe Button when pressed */
 .newsbtn:active {
     color: var(--neutral);
 }
 
+/* Footer with Shadow */
+.footer {
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 0.3);
+    background: var(--green);
+    height: 5vh;
+    width: 100%;
+    color: white;
+}
+
+/* Removing Text Decoration of Hyperlink */
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Animation for Footer Text */
+.footer-text {
+    transition: transform .2s;
+}
+
+/* Different Color on Footer Text to highlight website */
+.link {
+    color: var(--neutral);
+}
+
+/* Expand Animate Footer Text on Hover */
+.footer-text:hover {
+    transform: scale(1.1);
+}
+
+/* Media Query */
 @media screen and (max-width: 800px) {
+    /* Change trails card width */
     .trails {
         width: 100%;
         margin-bottom: 10%;
     }
+
+    /* Resetting Left Right Margins */
     .left, .right {
         margin-left: 0;
         margin-right: 0;
     }
+
+    /* Making width 100% and adding bottom margin for Scroll box */
     .scrollbox {
         margin-bottom: 15%;
         width: 100%;
     }
+
+    /* Resetting Margin and Making Width 100% for Homestays */
     .homestays {
         margin-left: 0;
         width: 100%;
     }
-
+    /* Making Width 100% for Hotels */
     .hotels {
         width: 100%;
     }
+
+    /* Resetting Accommodations and Nature Trails Height and Making Width 100% */
     .accommodations, .nature-trails {
         height:initial;
         width: 100%;
     }
 
+    /* Changing Visit Section Height to Auto */
     .visit {
         padding-top: 5%;
         background: #f0f5f0;
         width:100%;
         height:auto;
     }
-
+    /* Resetting Container's Display from flex */
     .accommodation-container, .visit-container, .trails-container {
         display: initial;
     }
-
+    /* Making Width 100% for Visit Subcontainer and Map Card */
     .visit-subcontainer, .map {
         width: 100%;
     }
