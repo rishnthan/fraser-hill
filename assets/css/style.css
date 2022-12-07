@@ -161,7 +161,7 @@ h3 {
 }
 
 .homeButton:active {
-    color: var(--green);
+    color: var(--main);
 }
 
 a {
