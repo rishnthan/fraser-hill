@@ -47,11 +47,13 @@ html {
     margin-top: 1px;
     color: var(--bright);
     background-color: var(--green);
+    transition: transform .2s;
 }
 
 .rishbtn:hover {
     background: var(--dark);
     color: var(--bright);
+    transform: scale(1.1);
 }
 .rishbtn:active {
     background: var(--dark);
@@ -193,41 +195,6 @@ a {
     margin-right: 5%;
 }
 
-
-@media screen and (max-width: 1280px) {
-    .trails-container {
-        display: initial;
-    }
-    .trails {
-        width: 100%;
-        margin-bottom: 10%;
-    }
-    .left, .right {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .scrollbox {
-        margin-bottom: 15%;
-        width: 100%;
-    }
-    .homestays {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .hotels {
-        width: 100%;
-    }
-    .accommodations, .nature-trails {
-        height:initial;
-        width: 100%;
-    }
-
-    .accommodation-container {
-        display: initial;
-    }
-}
-
 .hotels-cards {
     scroll-snap-align: start;
     height: 80vh;
@@ -301,16 +268,17 @@ a {
     font-size: 20px;
     background: var(--bright);
     color: var(--dark);
+    transition: transform .2s;
 }
 
 .accommodationBTN:hover {
     background: var(--main);
     color: var(--dark);
+    transform: scale(1.05);
 }
 
 .accommodationBTN:active {
-    background: var(--green);
-    color: white;
+    color: black;
 }
 
 .footer {
@@ -338,9 +306,111 @@ a {
 }
 
 .visit {
+    padding-right: 15%;
+    padding-left: 15%;
     background: #f0f5f0;
     width:100%;
     height:95vh;
-    padding-right: 15%;
-    padding-left: 15%;
+}
+
+.visit-container {
+    display: flex;
+}
+
+.map {
+    margin-top:5% ;
+    margin-right: 5%;
+    width: 45%;
+    height: 80vh;
+}
+
+.map .card-title, .socials .card-title, .newsletter .card-title {
+    font-family: 'Staatliches', cursive;
+    font-size: 48px;
+}
+
+iframe {
+    border-radius: 15px;
+}
+.visit-subcontainer {
+    height: 80vh;
+    margin-top: 5%;
+    width: 45%;
+}
+
+.socials {
+    margin-top: 5%;
+    height: 48%;
+}
+
+.newsletter {
+    height: 48%;
+}
+.social-icon {
+    margin-top: 10%;
+    font-size: 6vh;
+    color: var(--dark)
+}
+
+.form-control {
+    margin-bottom: 3%;
+}
+
+.newsbtn {
+    width: 100%;
+    background: var(--dark);
+    color: white;
+    transition: transform .2s;
+}
+
+.newsbtn:hover {
+    background: var(--green);
+    color: white;
+    transform: scale(1.02);
+}
+
+.newsbtn:active {
+    color: var(--neutral);
+}
+
+@media screen and (max-width: 1280px) {
+    .trails {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .left, .right {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .scrollbox {
+        margin-bottom: 15%;
+        width: 100%;
+    }
+    .homestays {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .hotels {
+        width: 100%;
+    }
+    .accommodations, .nature-trails {
+        height:initial;
+        width: 100%;
+    }
+
+    .visit {
+        padding-top: 5%;
+        background: #f0f5f0;
+        width:100%;
+        height:auto;
+    }
+
+    .accommodation-container, .visit-container, .trails-container {
+        display: initial;
+    }
+
+    .visit-subcontainer, .map {
+        width: 100%;
+    }
 }
