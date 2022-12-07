@@ -23,38 +23,40 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <nav class="rishnav navbar navbar-expand-lg py-4 justify-content-center">
-            <svg style="width:40px;height:40px;" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M14,6L10.25,11L13.1,14.8L11.5,16C9.81,13.75 7,10 7,10L1,18H23L14,6Z" />
-            </svg>
-            <a class="navbar-brand" href="#">Visit Fraser Hill</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle Nav">
-                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="#464e47" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+        <div class="home" id="home">
+            <nav class="rishnav navbar navbar-expand-lg py-4 justify-content-center">
+                <svg style="width:40px;height:40px;" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M14,6L10.25,11L13.1,14.8L11.5,16C9.81,13.75 7,10 7,10L1,18H23L14,6Z" />
                 </svg>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navigation">
-                <div class="navigationNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#attractions">attractions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#nature-trails">nature trails</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#accommodations">accommodations</a>
-                        </li>
-                    </ul>
+                <a class="navbar-brand" href="#">Visit Fraser Hill</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle Nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                    <div class="navigationNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#attractions">attractions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nature-trails">nature trails</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#accommodations">accommodations</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="btn rishbtn" href="#visit">Visit Today!</a>
                 </div>
-                <a class="btn rishbtn" href="#visit">Visit Today!</a>
+            </nav>
+            <div class="home-content text-center">
+                <h1>Fraser's Hill</h1>
+                <p>A luscious mountain village in Pahang, Malaysia. Well-known for its highland rainforest and extensive birdlife.</p>
+                <a class="btn homeButton" href="#attractions">Find Out More</a>
             </div>
-        </nav>
-        <div class="home">
-           
+            <video autoplay muted loop id="video">
+                <source src="assets/vid/fraser.mp4" type="video/mp4">
+            </video>
         </div>
         <div class="section attractions " id="attractions">
             <h3 data-aos="fade-up-right">Attractions</h3>
@@ -414,7 +416,43 @@
                 </div>
             </div>
         </div>
-        <div class="visit" id="visit">
+        <div data-aos="fade-up" class="visit" id="visit">
+            <div class="visit-container">
+                <div data-aos="zoom-out" class="map card">
+                    <div class="card-body">
+                        <h5 class="card-title">Location</h5>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31851.76117163249!2d101.72225690263065!3d3.707085203263383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cbf4e2c3261e61%3A0xe270502734b6ffb4!2sFraser&#39;s%20Hill%2C%20Pahang!5e0!3m2!1sen!2smy!4v1670389620961!5m2!1sen!2smy" width="100%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="visit-subcontainer">
+                    <div data-aos="zoom-out" class="newsletter card">
+                        <div class="card-body">
+                            <h5 class="card-title">Newsletter</h5>
+                            <p class="card-text">Subscribe today! Don't worry, we won't spam you.</p>
+                            <form id="newsletter-form">
+                                Name
+                                <input class="form-control" type="text" placeholder="Tony Stark" aria-label=".form-control-lg example">
+                                Email Address
+                                <input class="form-control" type="text" placeholder="ironman@avengers.co" aria-label=".form-control-lg example">
+                                <a href="#visit" class="btn newsbtn" onclick="subscribe()">Subscribe</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-out" class="socials card">
+                        <div class="card-body">
+                            <h5 class="card-title">Find Us Here!</h5>
+                            <p class="card-text">Follow us on our socials below, to find out more on Fraser's Hill, and be updated regularly regarding the changes and even promotions!</p>
+                            <div class="social-icon text-center">
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-instagram-square"></i>
+                                <i class="fab fa-youtube-square"></i>
+                                <i class="fas fa-envelope-square"></i>
+                                <i class="fab fa-twitter-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="footer p-3 text-center">
             <a href="https://twirled.github.io" target="_blank" rel="noopener noreferrer">
@@ -453,6 +491,7 @@
                 e.preventDefault();
             });
         });
+
         let scroll = document.querySelector("#rish-btn")
         let end = document.querySelector("#end")
 
@@ -460,5 +499,8 @@
         end.scrollIntoView()
         });
 
+        function subscribe() {
+            document.getElementById("newsletter-form").reset();
+        }
     </script>
 </html>
