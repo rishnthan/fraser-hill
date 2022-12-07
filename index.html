@@ -1,87 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Head Section of HTML -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <!-- Title of Webpage -->
         <title>Fraser Hill</title>
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Importing CSS files -->
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css"> <!-- My CSS -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> <!-- Owl Carousel's Theme CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- AOS CSS -->
         <link rel="icon" href="" type="image/x-icon">
+        <!-- Importing JS files -->
+        <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- PopperJS -->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <!-- JQuery Mousewheel for Owl Carousel -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" integrity="sha512-rCjfoab9CVKOH/w/T6GbBxnAH5Azhy4+q1EXW5XEURefHbIkRbQ++ZR+GBClo3/d3q583X/gO4FKmOFuhkKrdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js" integrity="sha512-c5JDIvikBZ6tuz+OyaFsHKvuyg+tCug3hf41Vmmd5Yz9H5anj4vZOqlBV5PJoEbBJGFCgKoRT9YAgko4JS6/Qw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Owl Carousel JS -->
         <script src="./assets/js/owl.carousel.min.js"></script>
+        <!-- Bootstrap JS -->
         <script src="./assets/js/bootstrap.min.js"></script>
+        <!-- Importing Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Montserrat, Roboto, and Staatliches from Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&family=Roboto:wght@300;500;600&family=Poppins:wght@300&family=Staatliches&display=swap" rel="stylesheet">
+        <!-- Font Awesome Icon Fonts  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+        <!-- Home Section - Top Of Page -->
         <div class="home" id="home">
+            <!-- Navbar -->
+            <!-- Responsive due to Bootstrap's navbar-expand-lg class, Bootstrap top and bottom padding, and centering -->
             <nav class="rishnav navbar navbar-expand-lg py-4 justify-content-center">
+                <!-- Fraser Hill Logo -->
                 <svg style="width:40px;height:40px;" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M14,6L10.25,11L13.1,14.8L11.5,16C9.81,13.75 7,10 7,10L1,18H23L14,6Z" />
                 </svg>
+                <!-- Brand next to Logo -->
                 <a class="navbar-brand" href="#">Visit Fraser Hill</a>
+                <!-- Button for Navbar when website has mobile width, Will open up the main navigation bar items when pressed -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle Nav">
                     <i class="fas fa-bars"></i>
                 </button>
+                <!-- Main Navigation Bar Items, Collapses for Mobile-Responsiveness -->
                 <div class="collapse navbar-collapse justify-content-end" id="navigation">
                     <div class="navigationNav">
+                        <!-- Navbar Nav -->
                         <ul class="navbar-nav">
+                            <!-- Attractions Link -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#attractions">attractions</a>
                             </li>
+                            <!-- Nature Trails Link -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#nature-trails">nature trails</a>
                             </li>
+                            <!-- Accommodations Link -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#accommodations">accommodations</a>
                             </li>
                         </ul>
                     </div>
+                    <!-- Visit Today Button that goes to End of Page to show Location -->
                     <a class="btn rishbtn" href="#visit">Visit Today!</a>
                 </div>
             </nav>
+            <!-- Home Content Container, centering text using Bootstrap -->
             <div class="home-content text-center">
                 <h1>Fraser's Hill</h1>
                 <p>A luscious mountain village in Pahang, Malaysia. Well-known for its highland rainforest and extensive birdlife.</p>
+                <!-- Button to lead user to next section which is Attractions -->
                 <a class="btn homeButton" href="#attractions">Find Out More</a>
             </div>
+            <!-- Background Video -->
             <video autoplay muted loop id="video">
                 <source src="assets/vid/fraser.mp4" type="video/mp4">
             </video>
         </div>
+        <!-- Attractions Section -->
         <div class="section attractions " id="attractions">
+            <!-- Header of Section, using AOS for animation -->
             <h3 data-aos="fade-up-right">Attractions</h3>
+            <!-- Owl Carousel -->
             <div class="owl-carousel">
+                <!-- Hyperlinked Cards that leads to the external Attraction's website -->
                 <a style="text-decoration: none" href="https://www.tripadvisor.com.my/Attraction_Review-g303992-d8366429-Reviews-Allan_s_Water-Bukit_Fraser_Raub_District_Pahang.html" target="_blank" rel="noopener noreferrer">
-                    <div data-aos="fade-down"class="card attractioncard">
+                    <!-- Vertical Bootstrap Card, with AOS for animation -->
+                    <div data-aos="fade-down" class="card attractioncard">
+                        <!-- Card Image linked to the top with Bootstrap -->
                         <img class="card-img-top" src="https://petitguru.s3.amazonaws.com/215/1.jpg" alt="">
+                        <!-- Card Body -->
                         <div class="card-body">
+                            <!-- Card Title with Bootstrap to center the text -->
                             <h4 class="card-title attraction-header text-center">Allan's Water</h4>
+                            <!-- Description of the Attraction -->
                             <p class="card-text attraction-text">Allan's Water is a tiny lake in an alcove that was converted into a park for recreational sports and paddle boating from a reservoir that had fallen into neglect over time.</p>
+                            <!-- Animated Text with Icon for Hover and Active -->
                             <p class="subtext">Learn More <i class="fas fa-arrow-right"></i> </p>
                         </div>
                     </div>
                 </a>
+                <!-- Hyperlinked Cards that leads to the external Attraction's website -->
                 <a style="text-decoration: none" href="https://www.tripadvisor.com.my/Restaurant_Review-g303992-d5859121-Reviews-Mimi_Strawberry_Tropical_Rainforest_Restaurant-Bukit_Fraser_Raub_District_Pahang.html" target="_blank" rel="noopener noreferrer">
+                    <!-- Vertical Bootstrap Card, with AOS for animation -->
                     <div data-aos="fade-up" class="card attractioncard">
+                        <!-- Card Image linked to the top with Bootstrap -->
                         <img class="card-img-top" src="https://www.puncakinn.pkbf.gov.my/images/attraction/strawberry/ms4.jpg" alt="">
+                        <!-- Card Body -->
                         <div class="card-body">
+                            <!-- Card Title with Bootstrap to center the text -->
                             <h4 class="card-title attraction-header text-center">Strawberry Garden</h4>
+                            <!-- Description of the Attraction -->
                             <p class="card-text attraction-text">A flower nursery within the compound also provides some amusement and retail opportunities for ornamental plant and gardening enthusiasts..</p>
+                            <!-- Animated Text with Icon for Hover and Active -->
                             <p class="subtext">Learn More <i class="fas fa-arrow-right"></i> </p>
                         </div>
                     </div>
                 </a>
+                <!-- Hyperlinked Cards that leads to the external Attraction's website -->
                 <a style="text-decoration: none" href="https://www.leadingcourses.com/clubs/asia+malaysia/fraser-s-hill-golf-club" target="_blank" rel="noopener noreferrer">
+                    <!-- Vertical Bootstrap Card, with AOS for animation -->
                     <div data-aos="fade-down" class="card attractioncard">
                         <img class="card-img-top" src="https://www.pahangtourism.org.my/images/FHILLS/FH2.JPG" alt="">
                         <div class="card-body">
@@ -91,64 +137,105 @@
                         </div>
                     </div>
                 </a>
+                <!-- Hyperlinked Cards that leads to the external Attraction's website -->
                 <a style="text-decoration: none" href="https://www.puncakinn.pkbf.gov.my/index.php/attractions/bird-interpretive-center" target="_blank" rel="noopener noreferrer">
+                    <!-- Vertical Bootstrap Card, with AOS for animation -->
                     <div data-aos="fade-up" class="card attractioncard">
+                        <!-- Card Image linked to the top with Bootstrap -->
                         <img class="card-img-top" src="https://www.mdraub.gov.my/sites/default/files/styles/panopoly_image_original/public/bird-interpretive-centre.jpg" alt="">
+                        <!-- Card Body -->
                         <div class="card-body">
+                            <!-- Card Title with Bootstrap to center the text -->
                             <h4 class="card-title attraction-header text-center">Bird Interpretive Center</h4>
+                            <!-- Description of the Attraction -->
                             <p class="card-text attraction-text">Dedicated to bird watching, one of Fraser's Hill's most popular tourist and visitor activities, over 250 species of birds have been recorded here, including hornbills, doves,
                                 pheasants, eagles and other endemic species.</p>
+                            <!-- Animated Text with Icon for Hover and Active -->
                             <p class="subtext">Learn More <i class="fas fa-arrow-right"></i> </p>
                             </div>
                     </div>
                 </a>
+                <!-- Hyperlinked Cards that leads to the external Attraction's website -->
                 <a style="text-decoration: none" href="https://thesmokehouse.my/ye-olde-smokehouse-frasers-hill/" target="_blank" rel="noopener noreferrer">
+                    <!-- Vertical Bootstrap Card, with AOS for animation -->
                     <div data-aos="fade-down" class="card attractioncard">
+                        <!-- Card Image linked to the top with Bootstrap -->
                         <img class="card-img-top" src="https://www.thesmokehouse.my/wp-content/uploads/2011/08/fraserhillhotel.jpg" alt="">
+                        <!-- Card Body -->
                         <div class="card-body">
+                            <!-- Card Title with Bootstrap to center the text -->
                             <h4 class="card-title attraction-header text-center">Ye Olde Smokehouse</h4>
+                            <!-- Description of the Attraction -->
                             <p class="card-text attraction-text">The Smokehouse is a hotel restaurant that features a warm ambience lit by lamps and candles, serving authentic English cuisine such as Beef Wellington, Lamb Shank and Sunday Roast.</p>
+                            <!-- Animated Text with Icon for Hover and Active -->
                             <p class="subtext">Learn More <i class="fas fa-arrow-right"></i> </p>
                         </div>
                     </div>
                 </a>
+                <!-- Hyperlinked Cards that leads to the external Attraction's website -->
                 <a style="text-decoration: none" href="https://thesmokehouse.my/scotts-pub-restaurant-frasers-hill" target="_blank" rel="noopener noreferrer">
+                    <!-- Vertical Bootstrap Card, with AOS for animation -->
                     <div data-aos="fade-up" class="card attractioncard">
+                        <!-- Card Image linked to the top with Bootstrap -->
                         <img class="card-img-top" src="https://alchemyrider.files.wordpress.com/2013/02/frasers-hill-scotts-pub-and-restaurant.jpg" alt="">
+                        <!-- Card Body -->
                         <div class="card-body">
+                            <!-- Card Title with Bootstrap to center the text -->
                             <h4 class="card-title attraction-header text-center">Scott's Pub & Restaurant</h4>
+                            <!-- Description of the Attraction -->
                             <p class="card-text attraction-text">Scott's Pub and Restaurant, formerly the Tavern, is a continental restaurant that serves a selection of local dishes alongside its English menu sits on a small embankment overlooking the clock tower and town roundabout.</p>
+                            <!-- Animated Text with Icon for Hover and Active -->
                             <p class="subtext">Learn more <i class="fas fa-arrow-right"></i> </p>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
+        <!-- Nature Trails Section -->
         <div class="section nature-trails" id="nature-trails">
+            <!-- Header with AOS Animation -->
             <h3 data-aos="fade-up-right">Nature Trails</h3>
+            <!-- Trails Container, 2 cards per container (Acts as row) -->
+            <!-- Left and Right Cards separated for spacing -->
             <div class="trails-container justify-content-center">
+                <!-- Trails Left Card with No Border, Bottom Margin using Bootstrap. Used AOS Animation -->
                 <div data-aos="fade-right" class="trails left card border-0 mb-7">
+                    <!-- Bootstrap Row, to make Horizontal Cards (on Desktop only, I changed it to vertical for mobile) -->
                     <div class="row g-0">
+                        <!-- Make image width 4 columns -->
                         <div class="col-md-4">
-                            <img src="https://imgur.com/oC77FWb.jpg" style="height: 100%;" class="img-fluid rounded-start">
+                            <!-- Image -->
+                            <img src="https://imgur.com/oC77FWb.jpg" style="height: 100%;" class="img-fluid rounded-start" alt="">
                         </div>
+                        <!-- Make card width 8 columns -->
                         <div class="col-md-8">
+                            <!-- Card Header with Bootstrap Text Centering -->
                             <h5 class="trail-title card-header text-center">Pine Tree Hill</h5>
+                            <!-- Card Body -->
                             <div class="card-body">
+                                <!-- Description of Trail -->
                                 <p class="trail-text card-text">Pine Tree Hill is a 1,500 meter high mountain that sits in Bukit Fraser. The trail head can be accessed near the end of the High Pines road, just before the bungalow after Seri Intan.
                                     The trail is about 5.5 km long, and it remains the most challenging and toughest trekking path in Fraser's Hill. The name is inspired by the coniferous plants that used to dot the peak.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Trails Right Card with No Border, Bottom Margin using Bootstrap. Used AOS Animation -->
                 <div data-aos="fade-left" class="trails right card border-0 mb-7">
+                    <!-- Bootstrap Row, to make Horizontal Cards (on Desktop only, I changed it to vertical for mobile) -->
                     <div class="row g-0">
+                        <!-- Make image width 4 columns -->
                         <div class="col-md-4">
-                            <img src="https://i.imgur.com/1T0lxkq.jpeg" style="height: 100%;" class="img-fluid rounded-start">
+                            <!-- Image -->
+                            <img src="https://i.imgur.com/1T0lxkq.jpeg" style="height: 100%;" class="img-fluid rounded-start" alt="">
                         </div>
+                        <!-- Make card width 8 columns -->
                         <div class="col-md-8">
+                            <!-- Card Header with Bootstrap Text Centering -->
                             <h5 class="trail-title card-header text-center">Abu Suradi</h5>
+                            <!-- Card Body -->
                             <div class="card-body">
+                                <!-- Description of Trail -->
                                 <p class="trail-text card-text ">Abu Suradi Trail is a short and easy 500 meter jungle walk suitable for hikers of all ages. It was named after the first person to be awarded a mining lease for Pamah Lebar -
                                     now the popular Fraser's Hill public golf course in the center of town. Abu Suradi operated a tin mine for ten years from 1899 until his lease got cancelled by British district officer.</p>
                             </div>
@@ -156,29 +243,47 @@
                     </div>
                 </div>
             </div>
+            <!-- Trails Container, 2 cards per container (Acts as row) -->
+            <!-- Left and Right Cards separated for spacing -->
             <div class="trails-container justify-content-center">
+                <!-- Trails Left Card with No Border, Bottom Margin using Bootstrap. Used AOS Animation -->
                 <div data-aos="fade-right" class="trails left border-0 card mb-7">
+                    <!-- Bootstrap Row, to make Horizontal Cards (on Desktop only, I changed it to vertical for mobile) -->
                     <div class="row g-0">
+                        <!-- Make image width 4 columns -->
                         <div class="col-md-4">
-                            <img src="https://i.imgur.com/zWOtP3C.jpeg" style="height: 100%;" class="img-fluid rounded-start">
+                            <!-- Image -->
+                            <img src="https://i.imgur.com/zWOtP3C.jpeg" style="height: 100%;" class="img-fluid rounded-start" alt="">
                         </div>
+                        <!-- Make card width 8 columns -->
                         <div class="col-md-8">
+                            <!-- Card Header with Bootstrap Text Centering -->
                             <h5 class="trail-title card-header text-center">Kindersley Trail</h5>
+                            <!-- Card Body -->
                             <div class="card-body">
+                                <!-- Description of Trail -->
                                 <p class="trail-text card-text">The trail takes its name after RCM Kindersley, who was part of the original Fraser's Hill Development Committee responsible for developing the highland retreat during colonial times.
                                     The trail was first opened in 1919 as an access route for British officials to visit the Methodist Mission from nearby homes.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Trails Right Card with No Border, Bottom Margin using Bootstrap. Used AOS Animation -->
                 <div data-aos="fade-left" class="trails right border-0 card mb-7">
+                    <!-- Bootstrap Row, to make Horizontal Cards (on Desktop only, I changed it to vertical for mobile) -->
                     <div class="row g-0">
+                        <!-- Make image width 4 columns -->
                         <div class="col-md-4">
+                            <!-- Image -->
                             <img src="https://i.imgur.com/L4BqxUf.jpeg" style="height: 100%;" class="img-fluid rounded-start">
                         </div>
+                        <!-- Make card width 8 columns -->
                         <div class="col-md-8">
+                            <!-- Card Header with Bootstrap Text Centering -->
                             <h5 class="trail-title card-header text-center">Hemmant Trail</h5>
+                            <!-- Card Body -->
                             <div class="card-body">
+                                <!-- Description of Trail -->
                                 <p class="trail-text card-text">The Hemmant Trail, named for Frank Hemmant, the architect of Fraser's Hill Golf Course, begins in a grass area just across the Abu Suradi trail head.
                                     It's a simple one-kilometer track with a mild incline for the first quarter and a level second quarter. This is recommended for hiking beginners.</p>
                             </div>
@@ -186,29 +291,47 @@
                     </div>
                 </div>
             </div>
+            <!-- Trails Container, 2 cards per container (Acts as row) -->
+            <!-- Left and Right Cards separated for spacing -->
             <div class="trails-container justify-content-center">
+                <!-- Trails Left Card with No Border, Bottom Margin using Bootstrap. Used AOS Animation -->
                 <div data-aos="fade-right" class="trails left border-0 card mb-7">
+                    <!-- Bootstrap Row, to make Horizontal Cards (on Desktop only, I changed it to vertical for mobile) -->
                     <div class="row g-0">
+                        <!-- Make image width 4 columns -->
                         <div class="col-md-4">
-                            <img src="https://i.imgur.com/JtmslW9.jpeg" style="height: 100%;" class="img-fluid rounded-start">
+                            <!-- Image -->
+                            <img src="https://i.imgur.com/JtmslW9.jpeg" style="height: 100%;" class="img-fluid rounded-start" alt="">
                         </div>
+                        <!-- Make card width 8 columns -->
                         <div class="col-md-8">
+                            <!-- Card Header with Bootstrap Text Centering -->
                             <h5 class="trail-title card-header text-center">Bishop Trail</h5>
+                            <!-- Card Body -->
                             <div class="card-body">
+                                <!-- Description of Trail -->
                                 <p class="trail-text card-text">The trail is named after Reverend CJ Ferguson-Davie, who rediscovered Fraser's Hill in 1917 while looking for the original founder Louis James Fraser who had gone missing circa 1915.
                                     Ferguson and a fellow bishop failed to find any trace of Fraser, but they did recommend the area for development as a hill resort.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Trails Right Card with No Border, Bottom Margin using Bootstrap. Used AOS Animation -->
                 <div data-aos="fade-left" class="trails right border-0 card mb-7">
+                    <!-- Bootstrap Row, to make Horizontal Cards (on Desktop only, I changed it to vertical for mobile) -->
                     <div class="row g-0">
+                        <!-- Make image width 4 columns -->
                         <div class="col-md-4">
-                            <img src="https://i.imgur.com/pE2hize.jpeg" style="height: 100%;" class="img-fluid rounded-start">
+                            <!-- Image -->
+                            <img src="https://i.imgur.com/pE2hize.jpeg" style="height: 100%;" class="img-fluid rounded-start" alt="">
                         </div>
+                        <!-- Make card width 8 columns -->
                         <div class="col-md-8">
+                            <!-- Card Header with Bootstrap Text Centering -->
                             <h5 class="trail-title card-header text-center">Mager Trail</h5>
+                            <!-- Card Body -->
                             <div class="card-body">
+                                <!-- Description of Trail -->
                                 <p class="trail-text card-text">Mager Trail is a fairly easy 350 meter hike, named after the British engineer who was responsible for the initial development of Fraser's Hill in 1918 as a colonial rest station. FW Mager
                                     erved the colonial government from 1918, helping to survey land and identify suitable places for building bungalows and asphalt roads.</p>
                             </div>
@@ -217,198 +340,311 @@
                 </div>
             </div>
         </div>
+        <!-- Accommodations Section -->
         <div class="section accommodations" id="accommodations">
+            <!-- Accommodations Header with AOS animation -->
             <h3 data-aos="fade-up-right">Accommodations</h3>
+            <!-- Accommodations Container -->
             <div class="accommodation-container">
+                <!-- Used Bootstrap to set width to 4 columns -->
                 <div class="col-md-4">
+                    <!-- Scrollbox Title with Bootstrap text centering and AOS animation -->
                     <h4 data-aos="fade-down" class="accommodation-header text-center">Hotels</h4>
+                    <!-- Scrollbox for Hotels with AOS animation -->
                     <div data-aos="zoom-in-left" class="hotels scrollbox">
+                        <!-- Hotel Card with no border -->
                         <div class="card border-0 hotels-cards">
-                            <img src="https://images.trvl-media.com/lodging/58000000/57530000/57526200/57526187/943be204.jpg" class="card-img-top">
+                            <!-- Image -->
+                            <img src="https://images.trvl-media.com/lodging/58000000/57530000/57526200/57526187/943be204.jpg" class="card-img-top" alt="">
+                            <!-- Card Body -->
                             <div class="card-body accommodation-cards">
-                            <h5 class="card-title">The Pines</h5>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <p class="card-text">Get your trip off to a great start with a stay at this hotel, which offers car park free of charge. Conveniently situated in the center of Fraser Hill, this hotel puts you close to attractions and interesting dining options. Rated with 3 stars, this high-quality hotel provides guests with access to restaurant and steamroom on-site.</p>
-                            <a href="https://www.tripadvisor.com.my/Hotel_Review-g303992-d737459-Reviews-The_Pines_Resort-Bukit_Fraser_Raub_District_Pahang.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
-                            </div>
+                                <!-- Card Title -->
+                                <h5 class="card-title">The Pines</h5>
+                                <!-- Stars Rating Span -->
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <!-- Description of Hotel -->
+                                <p class="card-text">Get your trip off to a great start with a stay at this hotel, which offers car park free of charge. Conveniently situated in the center of Fraser Hill, this hotel puts you close to attractions and interesting dining options. Rated with 3 stars, this high-quality hotel provides guests with access to restaurant and steamroom on-site.</p>
+                                <!-- Button that links to external website to book the hotel -->
+                                <a href="https://www.tripadvisor.com.my/Hotel_Review-g303992-d737459-Reviews-The_Pines_Resort-Bukit_Fraser_Raub_District_Pahang.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
+                                </div>
                         </div>
+                        <!-- Break line to add spacing -->
                         <br>
+                        <!-- Hotel Card with no border -->
                         <div class="card  border-0 hotels-cards">
-                            <img src="https://www.pahangtourism.org.my/media/k2/items/cache/5a61d31ed794cb758475f6c89477dfed_XL.jpg" class="card-img-top">
+                            <!-- Image -->
+                            <img src="https://www.pahangtourism.org.my/media/k2/items/cache/5a61d31ed794cb758475f6c89477dfed_XL.jpg" class="card-img-top" alt="">
+                            <!-- Card Body -->
                             <div class="card-body accommodation-cards">
+                                <!-- Card Title -->
                                 <h5 class="card-title">Puncak Inn</h5>
+                                <!-- Stars Rating Span -->
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
+                                <!-- Description of Hotel -->
                                 <p class="card-text">Built in 1968, Puncak Inn Fraser's Hill is a distinct addition to Fraser Hill and a smart choice for travelers. From here, guests can enjoy easy access to all that it can offer. Step into one of 27 inviting rooms and escape the stresses of the day with a wide range of amenities such as internet access non-smoking rooms and coffee & tea making facilities.</p>
-                            <a href="https://www.tripadvisor.com/Hotel_Review-g303992-d1978361-Reviews-Puncak_Inn-Bukit_Fraser_Raub_District_Pahang.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
+                                <!-- Button that links to external website to book the hotel -->
+                                <a href="https://www.tripadvisor.com/Hotel_Review-g303992-d1978361-Reviews-Puncak_Inn-Bukit_Fraser_Raub_District_Pahang.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
                             </div>
                         </div>
+                        <!-- Break line to add spacing -->
                         <br>
+                        <!-- Hotel Card with no border -->
                         <div class="card  border-0 hotels-cards">
-                            <img src="https://www.fraserhill.info/img/tm-resort-sri-intan-hotel.jpg" class="card-img-top">
+                            <!-- Image -->
+                            <img src="https://www.fraserhill.info/img/tm-resort-sri-intan-hotel.jpg" class="card-img-top" alt="">
+                            <!-- Card Body -->
                             <div class="card-body accommodation-cards">
+                                <!-- Card Title -->
                                 <h5 class="card-title">TM Resort Sri Intan</h5>
+                                <!-- Stars Rating Span -->
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
+                                <!-- Description of Hotel -->
                                 <p class="card-text">TM Resort Sri Intan is a bungalow providing budget hotel accommodation near the town center. The hotel has seven rooms for rent; each room comes with standard room amenities and attached bathroom. Facilities at the hotel include a common lounge with mock fireplace, meeting room and outside, a pleasant garden with barbeque pit and picnic table arrangements on a verandah deck.</p>
-                            <a href="https://www.tripadvisor.com.my/Hotel_Review-g303992-d3905620-Reviews-TM_Resort_Sri_Peninjau_Fraser_s_Hill-Bukit_Fraser_Raub_District_Pahang.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
+                                <!-- Button that links to external website to book the hotel -->
+                                <a href="https://www.tripadvisor.com.my/Hotel_Review-g303992-d3905620-Reviews-TM_Resort_Sri_Peninjau_Fraser_s_Hill-Bukit_Fraser_Raub_District_Pahang.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
                             </div>
                         </div>
+                        <!-- Break line to add spacing -->
                         <br>
+                        <!-- Hotel Card with no border -->
                         <div class="card  border-0 hotels-cards">
-                            <img src="https://www.fraserhill.info/img/smokehouse-hotel-night.jpg" class="card-img-top">
+                            <!-- Image -->
+                            <img src="https://www.fraserhill.info/img/smokehouse-hotel-night.jpg" class="card-img-top" alt="">
+                            <!-- Card Body -->
                             <div class="card-body accommodation-cards">
+                                <!-- Card Title -->
                                 <h5 class="card-title">Smokehouse</h5>
+                                <!-- Stars Rating Span -->
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
+                                <!-- Description of Hotel -->
                                 <p class="card-text">Ye Olde Smokehouse has the charm of English countryside and its architecture will make your stay at the Hill Resort truly memorable. Stay in one of our well appointed rooms/suites furnished with four poster bed, English furniture and antiques. Enjoy the cool climate and tranquility of Fraser's Hill by indulging in our afternoon cream tea with homemade scones, strawberry jam and a pot of tea.</p>
-                            <a href="https://www.tripadvisor.com/Hotel_Review-g303992-d1026452-Reviews-Ye_Olde_Smokehouse_Fraser_s_Hill-Bukit_Fraser_Raub_District_Pahang.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
+                                <!-- Button that links to external website to book the hotel -->
+                                <a href="https://www.tripadvisor.com/Hotel_Review-g303992-d1026452-Reviews-Ye_Olde_Smokehouse_Fraser_s_Hill-Bukit_Fraser_Raub_District_Pahang.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Used Bootstrap to set width to 4 columns -->
                 <div class="col-md-4">
+                    <!-- Scrollbox Title with Bootstrap text centering and AOS animation -->
                     <h4 data-aos="fade-down" class="accommodation-header text-center">Bungalows</h4>
+                    <!-- Scrollbox for Bungalows with AOS animation -->
                     <div data-aos="zoom-in-up" class="bungalows scrollbox">
+                        <!-- Bungalow Card with no border -->
                         <div class="card  border-0 bungalows-cards">
-                            <img src="https://i2.wp.com/www.daphnescapades.com/wp-content/uploads/2016/12/Screen-Shot-2016-12-22-at-3.59.08-PM.png" class="card-img-top">
+                            <!-- Image -->
+                            <img src="https://i2.wp.com/www.daphnescapades.com/wp-content/uploads/2016/12/Screen-Shot-2016-12-22-at-3.59.08-PM.png" class="card-img-top" alt="">
+                            <!-- Card Body -->
                             <div class="card-body accommodation-cards">
+                                <!-- Card Title -->
                                 <h5 class="card-title">The Cottage</h5>
+                                <!-- Stars Rating Span -->
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
+                                <!-- Description of Bungalow -->
                                 <p class="card-text">The Cottage, also known as Banglo Bentong, is a colonial-era Tudor bungalow located close to Fraser's Hill town center. The main bungalow has a master bedroom with king bed and second bedroom with twin beds, while the annex wing has two bedrooms with twin beds - all bedrooms come with attached bathrooms with hot water shower.</p>
-                            <a href="https://www.agoda.com/puncak-inn-bungalows/hotel/fraser-hill-my.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
+                                <!-- Button that links to external website to book the Bungalow -->
+                                <a href="https://www.agoda.com/puncak-inn-bungalows/hotel/fraser-hill-my.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
                             </div>
                         </div>
+                        <!-- Break line to add spacing -->
                         <br>
+                        <!-- Bungalow Card with no border -->
                         <div class="card  border-0 bungalows-cards">
-                            <img src="https://i.imgur.com/EDJJNZJ.jpeg" class="card-img-top">
+                            <!-- Image -->
+                            <img src="https://i.imgur.com/EDJJNZJ.jpeg" class="card-img-top" alt="">
+                            <!-- Card Body -->
                             <div class="card-body accommodation-cards">
+                                <!-- Card Title -->
                                 <h5 class="card-title">Cicely</h5>
+                                <!-- Stars Rating Span -->
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
+                                <!-- Description of Bungalow -->
                                 <p class="card-text">Cicely, also known as Banglo Kuantan, is a colonial-era Tudor bungalow of stone construction that sits on a plateau overlooking the valley. The main bungalow has a master bedroom with king bed and two bedrooms with twin beds - all with attached bathrooms. Meanwhile, the annex wing houses three bedrooms with queen beds that share a common bathroom. Outside, a pretty garden with barbeque facilities sits.</p>
-                            <a href="https://www.agoda.com/puncak-inn-bungalows/hotel/fraser-hill-my.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
+                                <!-- Button that links to external website to book the Bungalow -->
+                                <a href="https://www.agoda.com/puncak-inn-bungalows/hotel/fraser-hill-my.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
                             </div>
                         </div>
+                        <!-- Break line to add spacing -->
                         <br>
+                        <!-- Bungalow Card with no border -->
                         <div class="card  border-0 bungalows-cards">
-                            <img src="https://imgur.com/p63e8gD.jpeg" class="card-img-top">
+                            <!-- Image -->
+                            <img src="https://imgur.com/p63e8gD.jpeg" class="card-img-top" alt="">
+                            <!-- Card Body -->
                             <div class="card-body accommodation-cards">
+                                <!-- Card Title -->
                                 <h5 class="card-title">Hollebeke</h5>
+                                <!-- Stars Rating Span -->
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
+                                <!-- Description of Bungalow -->
                                 <p class="card-text">Hollebeke, also known as Banglo Cini, is a colonial-era bungalow of Tudor architecture that sits high up on a hill near town. Providing spacious family accommodation for 10 pax, the main bungalow contains a master bedroom with king bed and two bedrooms with twin bed (all with attached bathrooms), while the annex wing houses two bedrooms with twin beds that share a common bathroom.</p>
-                            <a href="https://www.agoda.com/puncak-inn-bungalows/hotel/fraser-hill-my.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
+                                <!-- Button that links to external website to book the Bungalow -->
+                                <a href="https://www.agoda.com/puncak-inn-bungalows/hotel/fraser-hill-my.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
                             </div>
                         </div>
+                        <!-- Break line to add spacing -->
                         <br>
+                        <!-- Bungalow Card with no border -->
                         <div class="card  border-0 bungalows-cards">
-                            <img src="https://i.imgur.com/zffpoWE.jpeg" class="card-img-top">
+                            <!-- Image -->
+                            <img src="https://i.imgur.com/zffpoWE.jpeg" class="card-img-top" alt="">
+                            <!-- Card Body -->
                             <div class="card-body accommodation-cards">
+                                <!-- Card Title -->
                                 <h5 class="card-title">Abu Suradi</h5>
+                                <!-- Stars Rating Span -->
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
+                                <!-- Description of Bungalow -->
                                 <p class="card-text">Abu Suradi, also known as Banglo Tioman, is a small colonial bungalow, lacking a living hall and kitchen, the home is essentially composed of two separate bedrooms adjoining each other from the entrance. Each bedroom features a spacious setting with satellite television and king bed, adjacent dressing room with wardrobe and vanity mirror, and attached bathroom with hot water shower. </p>
-                            <a href="https://www.agoda.com/puncak-inn-bungalows/hotel/fraser-hill-my.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
+                                <!-- Button that links to external website to book the Bungalow -->
+                                <a href="https://www.agoda.com/puncak-inn-bungalows/hotel/fraser-hill-my.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
                             </div>
                         </div>
+                        <!-- Break line to add spacing -->
                         <br>
+                        <!-- Bungalow Card with no border -->
                         <div class="card border-0 bungalows-cards">
-                            <img src="https://www.fraserhill.info/img/green-acres.jpg" class="card-img-top">
+                            <!-- Image -->
+                            <img src="https://www.fraserhill.info/img/green-acres.jpg" class="card-img-top" alt="">
+                            <!-- Card Body -->
                             <div class="card-body accommodation-cards">
+                                <!-- Card Title -->
                                 <h5 class="card-title">Green Acres</h5>
+                                <!-- Stars Rating Span -->
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
+                                <!-- Description of Bungalow -->
                                 <p class="card-text">Green Acres is a holiday bungalow of colonial heritage located on a scenic hilltop. Composed of six bedrooms, the mansion is able to accommodate up to 27 guests at a time. Rooms may be rented individually, with bed configurations for small and big families. All rooms come with an attached bathroom with hot water shower and free wifi Internet access.</p>
-                            <a href="https://www.booking.com/hotel/my/ester-family-room-green-acres.en-gb.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
+                                <!-- Button that links to external website to book the Bungalow -->
+                                <a href="https://www.booking.com/hotel/my/ester-family-room-green-acres.en-gb.html" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Used Bootstrap to set width to 4 columns -->
                 <div class="col-md-4">
+                    <!-- Scrollbox Title with Bootstrap text centering and AOS animation -->
                     <h4 data-aos="fade-down" class="accommodation-header text-center">Homestays</h4>
+                    <!-- Scrollbox for Homestays with AOS animation -->
                     <div data-aos="zoom-in-right" class="homestays scrollbox">
+                        <!-- Homestay Card with no border -->
                         <div class="card border-0 homestays-cards">
-                            <img src="https://pix8.agoda.net/hotelImages/11419334/0/8758866e6b77ed500403b173d6363b7f.jpg" class="card-img-top">
+                            <!-- Image -->
+                            <img src="https://pix8.agoda.net/hotelImages/11419334/0/8758866e6b77ed500403b173d6363b7f.jpg" class="card-img-top" alt="">
+                            <!-- Card Body -->
                             <div class="card-body accommodation-cards">
+                                <!-- Card Title -->
                                 <h5 class="card-title">Colonie Luxe 1121</h5>
+                                <!-- Stars Rating Span -->
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
+                                <!-- Description of Homestay -->
                                 <p class="card-text">Colonie 1121 is a new Luxe offering in Fraser's Hill. This apartment is on the same level as the road with a great forest & lush garden view in Silverpark Resort. Complete with a large outdoor terrace with a hanging daybed & deep benches - enjoy steamboat nights, stargazing & the cool highland weather in the privacy of your own outdoor space.</p>
+                                <!-- Button that links to external website to book the homestay -->
                                 <a href="https://www.airbnb.com/rooms/41159909" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
                             </div>
                         </div>
+                        <!-- Break line to add spacing -->
                         <br>
+                        <!-- Homestay Card with no border -->
                         <div class="card border-0 homestays-cards">
-                            <img src="https://pix8.agoda.net/hotelImages/9084246/0/6c207dabb80d03d64bac5bb85ebbbb13.jpg" class="card-img-top">
+                            <!-- Image -->
+                            <img src="https://pix8.agoda.net/hotelImages/9084246/0/6c207dabb80d03d64bac5bb85ebbbb13.jpg" class="card-img-top" alt="">
+                            <!-- Card Body -->
                             <div class="card-body accommodation-cards">
+                                <!-- Card Title -->
                                 <h5 class="card-title">Colonie 12</h5>
+                                <!-- Stars Rating Span -->
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
+                                <!-- Description of Homestay -->
                                 <p class="card-text">Colonie 12 are Colonie 1111 & Colonie 1112 apartments combined to cater to big families or groups of up to 16 guests. These 2 apartments are located side by side with a huge balcony facing nature and a landscaped garden. This apartment fits 16 guests and guests will be provided with 4 car access cards to enter the apartment compound.</p>
+                                <!-- Button that links to external website to book the homestay -->
                                 <a href="https://www.airbnb.com/rooms/18197900" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
                             </div>
                         </div>
+                        <!-- Break line to add spacing -->
                         <br>
+                        <!-- Homestay Card with no border -->
                         <div class="card border-0 homestays-cards">
-                            <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/274601542.jpg?k=40c1dddb2eb7585171faa637bac43f1ee2b1501612acad5a52f1305dd76b5da0&o=" class="card-img-top">
+                            <!-- Image -->
+                            <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/274601542.jpg?k=40c1dddb2eb7585171faa637bac43f1ee2b1501612acad5a52f1305dd76b5da0&o=" class="card-img-top" alt="">
+                            <!-- Card Body -->
                             <div class="card-body accommodation-cards">
+                                <!-- Card Title -->
                                 <h5 class="card-title">The Hill</h5>
+                                <!-- Stars Rating Span -->
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
+                                <!-- Description of Homestay -->
                                 <p class="card-text">The Hill at Fraser Hill has mountain views, free WiFi and free private parking. Each unit has a balcony, a kitchen with a fridge, a dining area and a seating area with a flat-screen TV, while the private bathroom includes a bidet and a hairdryer. A minibar, a stovetop and toaster are also available, as well as a kettle and a coffee machine.</p>
+                                <!-- Button that links to external website to book the homestay -->
                                 <a href="https://www.airbnb.com/rooms/44027624" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
                             </div>
                         </div>
+                        <!-- Break line to add spacing -->
                         <br>
+                        <!-- Homestay Card with no border -->
                         <div class="card border-0 homestays-cards">
-                            <img src="https://pix8.agoda.net/hotelImages/9114884/0/7241587006fcea9e1535767ed8f71e2e.jpg" class="card-img-top">
+                            <!-- Image -->
+                            <img src="https://pix8.agoda.net/hotelImages/9114884/0/7241587006fcea9e1535767ed8f71e2e.jpg" class="card-img-top" alt="">
+                            <!-- Card Body -->
                             <div class="card-body accommodation-cards">
+                                <!-- Card Title -->
                                 <h5 class="card-title">Colonie 1232</h5>
+                                <!-- Stars Rating Span -->
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
+                                <!-- Description of Homestay -->
                                 <p class="card-text">Colonie 1232 is a walk-up apartment in Silverpark Resort Apartments, Fraser's Hill. With a big balcony designed for star-gazing, it's perfect for those seeking solitude, relaxation and recuperation. This apartment fits 8 guests and guests will be provided with 2 car access cards to enter the apartment compound.</p>
+                                <!-- Button that links to external website to book the homestay -->
                                 <a href="https://www.airbnb.com/rooms/3699798" target="_blank" rel="noopener noreferrer" class="btn accommodationBTN">Book Now!</a>
                             </div>
                         </div>
@@ -416,37 +652,62 @@
                 </div>
             </div>
         </div>
+        <!-- Visit Section with AOS animation -->
         <div data-aos="fade-up" class="visit" id="visit">
+            <!-- Visit Container -->
             <div class="visit-container">
+                <!-- Card for Map Location with AOS animation -->
                 <div data-aos="zoom-out" class="map card">
+                    <!-- Card Body -->
                     <div class="card-body">
+                        <!-- Card Title -->
                         <h5 class="card-title">Location</h5>
+                        <!-- Google Map Embed Link -->
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31851.76117163249!2d101.72225690263065!3d3.707085203263383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cbf4e2c3261e61%3A0xe270502734b6ffb4!2sFraser&#39;s%20Hill%2C%20Pahang!5e0!3m2!1sen!2smy!4v1670389620961!5m2!1sen!2smy" width="100%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
+                <!-- Subcontainer to hold newsletter card and socials card -->
                 <div class="visit-subcontainer">
+                    <!-- Newsletter card with AOS animation -->
                     <div data-aos="zoom-out" class="newsletter card">
+                        <!-- Card Body -->
                         <div class="card-body">
+                            <!-- Card Title -->
                             <h5 class="card-title">Newsletter</h5>
+                            <!-- Card Text -->
                             <p class="card-text">Subscribe today! Don't worry, we won't spam you.</p>
+                            <!-- Newsletter Form (since there's no backend, this does nothing, other than for show) -->
                             <form id="newsletter-form">
                                 Name
+                                <!-- Name Input Box -->
                                 <input class="form-control" type="text" placeholder="Tony Stark" aria-label=".form-control-lg example">
                                 Email Address
+                                <!-- Email Input Box -->
                                 <input class="form-control" type="text" placeholder="ironman@avengers.co" aria-label=".form-control-lg example">
-                                <a href="#visit" class="btn newsbtn" onclick="subscribe()">Subscribe</a>
+                                <!-- Button to activate subscribe function -->
+                                <a href="" class="btn newsbtn" onclick="subscribe()">Subscribe</a>
                             </form>
                         </div>
                     </div>
+                    <!-- Socials card with AOS animation -->
                     <div data-aos="zoom-out" class="socials card">
+                        <!-- Card Body -->
                         <div class="card-body">
+                            <!-- Card Title -->
                             <h5 class="card-title">Find Us Here!</h5>
+                            <!-- Card Text -->
                             <p class="card-text">Follow us on our socials below, to find out more on Fraser's Hill, and be updated regularly regarding the changes and even promotions!</p>
+                            <!-- Social Icons with Bootstrap text centering -->
                             <div class="social-icon text-center">
+                                <!-- Facebook Icon with FA5 -->
                                 <a class="social-link" href="https://www.facebook.com/tourismpahang"><i class="fab fa-facebook-square"></i></a>
+                                <!-- Instagram Icon with FA5 -->
                                 <a class="social-link" href="https://www.instagram.com/tourismpahang"><i class="fab fa-instagram-square"></i></a>
+                                <!-- YouTube Icon with FA5 -->
                                 <a class="social-link" href="https://www.youtube.com/@tourismpahang2133"><i class="fab fa-youtube-square"></i></a>
+                                <!-- Email Icon with FA5 -->
                                 <a class="social-link" href="mailto:webtourism16@gmail.com"><i class="fas fa-envelope-square"></i></a>
+                                <!-- Twitter Icon with FA5 -->
                                 <a class="social-link" href="https://twitter.com/tourismpahang"><i class="fab fa-twitter-square"></i></a>
                             </div>
                         </div>
@@ -454,19 +715,27 @@
                 </div>
             </div>
         </div>
+        <!-- Footer with Bootstrap padding, and text centering-->
         <div class="footer p-3 text-center">
+            <!-- Link to my website -->
             <a href="https://twirled.github.io" target="_blank" rel="noopener noreferrer">
+                <!-- Credit -->
                 <h6 class="footer-text"><span>made by</span> <span class="link">twirled.net</span></h6>
             </a>
         </div>
+        <!-- AOS JS Import (Here instead of in <head> because it doesn't work otherwise according to its documentation -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- Initiate AOS -->
         <script>
           AOS.init();
         </script>
     </body>
     <script>
+        // When HTML is loaded
         $(document).ready(function(){
+            // Variable to make the following code easier to handle
             var owl = $('.owl-carousel');
+            // Editing Setting of Owl Carousel
             owl.owlCarousel({
                 loop: true,
                 margin: 20,
@@ -482,6 +751,7 @@
                     }
                 }
             });
+            // Enabling Scroll Wheel for Owl Carousel thanks to JQuery Mousewheel
             owl.on('mousewheel', '.owl-stage', function (e) {
                 if (e.deltaY>0) {
                     owl.trigger('next.owl');
@@ -491,14 +761,18 @@
                 e.preventDefault();
             });
         });
-
+        // JS for smooth scroll when "Visit Today" button on navbar is pressed
+        // Variables to make the function cleaner
         let scroll = document.querySelector("#rish-btn")
         let end = document.querySelector("#end")
 
+        // Responsible for the smooth scroll
         scroll.addEventListener("click", function() {
-        end.scrollIntoView()
+            end.scrollIntoView()
         });
 
+        // Subscribe function for Newsletter
+        // No backend so this is just for show.
         function subscribe() {
             document.getElementById("newsletter-form").reset();
         }
