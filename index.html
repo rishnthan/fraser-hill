@@ -253,7 +253,7 @@
                         <!-- Make image width 4 columns -->
                         <div class="col-md-4">
                             <!-- Image using img-fluid -->
-                            <img src="https://i.imgur.com/zWOtP3C.jpeg" style="height: 100%;" class="    rounded" alt="">
+                            <img src="https://i.imgur.com/zWOtP3C.jpeg" style="height: 100%;" class="img-fluid rounded" alt="">
                         </div>
                         <!-- Make card width 8 columns -->
                         <div class="col-md-8">
@@ -680,12 +680,12 @@
                             <form id="newsletter-form">
                                 Name
                                 <!-- Name Input Box -->
-                                <input class="form-control" type="text" placeholder="Tony Stark" aria-label=".form-control-lg example">
+                                <input class="form-control" type="text" placeholder="Tony Stark" aria-label=".form-control-lg" required>
                                 Email Address
                                 <!-- Email Input Box -->
-                                <input class="form-control" type="text" placeholder="ironman@avengers.co" aria-label=".form-control-lg example">
-                                <!-- Button to activate subscribe function -->
-                                <a href="" class="btn newsbtn" onclick="subscribe()">Subscribe</a>
+                                <input class="form-control" type="text" placeholder="ironman@avengers.co" aria-label=".form-control-lg" required>
+                                <!-- Button to activate subscribe function -->  
+                                <a href="" class="btn newsbtn" type="submit">Subscribe</a>
                             </form>
                         </div>
                     </div>
@@ -776,5 +776,23 @@
         function subscribe() {
             document.getElementById("newsletter-form").reset();
         }
+        (function () {
+        'use strict'
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+                })
+            })()
     </script>
 </html>
