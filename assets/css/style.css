@@ -106,9 +106,9 @@ html {
     }
     @keyframes bounce {
         0% {transform: translateY(0)}
-        25% {transform: translateY(.3vh)}
+        25% {transform: translateY(.4vh)}
         50% {transform: translateY(0)}
-        75% {transform: translateY(-.6vh) }
+        75% {transform: translateY(-.8vh) }
         100% {transform: translateY(0)}
     }
 }
@@ -308,7 +308,7 @@ a {
 
 /* ScrollBox with Scroll Snapping, and Shadow */
 .scrollbox {
-    height: 80vh;
+    height: 70vh;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -341,19 +341,19 @@ a {
 /* Hotels Cards, Set Snapping Point and Height */
 .hotels-cards {
     scroll-snap-align: start;
-    height: 80vh;
+    height: 70vh;
 }
 
 /* Bungalows Cards, Set Snapping Point and Height */
 .bungalows-cards {
     scroll-snap-align: start;
-    height: 80vh;
+    height: 70vh;
 }
 
 /* Homestays Cards, Set Snapping Point and Height */
 .homestays-cards {
     scroll-snap-align: start;
-    height: 80vh;
+    height: 70vh;
 }
 
 /* Change end display to initial */
