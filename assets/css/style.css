@@ -91,7 +91,7 @@ html {
 /* Home Content Header */
 .home-content h1 {
     font-family: 'Staatliches', cursive;
-    font-size: 9rem;
+    font-size: 8rem;
     font-weight:  100;
     letter-spacing: 2px;
     text-align: center;
@@ -106,9 +106,9 @@ html {
     }
     @keyframes bounce {
         0% {transform: translateY(0)}
-        25% {transform: translateY(.3vh)}
+        25% {transform: translateY(.4vh)}
         50% {transform: translateY(0)}
-        75% {transform: translateY(-.6vh) }
+        75% {transform: translateY(-.8vh) }
         100% {transform: translateY(0)}
     }
 }
@@ -123,7 +123,10 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: white;
+    text-align: center;
     font-weight: 400;
+    padding-left: 5%;
+    padding-right: 5%;
     text-shadow: 0 8px 12px rgba(0,0,0,0.30), 0 8px 12px rgba(0, 0, 0, 0.50);
 }
 
