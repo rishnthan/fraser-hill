@@ -102,7 +102,7 @@ html {
 /* Animate Home Content Header to "Bounce" */
 @media (prefers-reduced-motion: no-preference) {
     .home-content h1 {
-        animation: bounce 5s linear infinite;
+        animation: bounce 3s linear infinite;
     }
     @keyframes bounce {
         0% {transform: translateY(0)}
@@ -132,18 +132,17 @@ html {
 
 /* Home Content Button that is linked to Attractions */
 .homeButton {
-    background: var(--bright);
+    transition: transform .2s;
+    color: rgba(255,255,255, 0.4);
     font-family: 'Staatliches', cursive;
-    font-size: 20px;
+    font-size: 32px;
     letter-spacing: .05rem;
 }
 
 /* Expands and changes color of Home Content Button on Hover */
 .homeButton:hover {
-    background: var(--dark);
-    color: white;
-    transition: transform .2s;
-    transform: scale(1.1);
+    color: var(--bright);
+    transform: scale(1.2) translateY(.5vh);
 }
 
 /* Changes text color when Home Content Button is pressed */
