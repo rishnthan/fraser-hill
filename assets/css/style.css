@@ -588,4 +588,8 @@ iframe {
     .visit-subcontainer, .map {
         width: 100%;
     }
+
+    .home-content h1 {
+        margin-top: 25vh;
+    }
 }
